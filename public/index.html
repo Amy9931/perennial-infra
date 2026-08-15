@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Perennial Infra LLP | Warehousing, Logistics &amp; Bitumen Trading</title>
+<meta name="description" content="Perennial Infra LLP - warehousing and support activities for transportation plus industrial commodity trading including bitumen oil and related extracts. Based in Mathura, Uttar Pradesh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#05070d;--panel:#0b101c;--panel2:#0f1626;
+  --line:#1c2740;--text:#e7ecf5;--muted:#8b96ab;
+  --gold:#d4af37;--cyan:#38bdf8;--violet:#8b5cf6;--green:#34d399;--orange:#f59e0b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:linear-gradient(115deg,#0b1f3a,#3b0764 25%,#7c2d12 50%,#0e7490 75%,#0b1f3a);background-size:500% 500%;animation:bgflow 22s ease-in-out infinite;filter:blur(50px);opacity:.65}
+body[data-theme="ocean"]::before{background:linear-gradient(115deg,#020617,#0e7490 25%,#06b6d4 50%,#1e3a8a 75%,#020617);background-size:500% 500%}
+body[data-theme="sunset"]::before{background:linear-gradient(115deg,#1c0a2e,#be123c 25%,#f97316 50%,#fbbf24 75%,#1c0a2e);background-size:500% 500%}
+body[data-theme="emerald"]::before{background:linear-gradient(115deg,#022c22,#059669 25%,#10b981 50%,#0e7490 75%,#022c22);background-size:500% 500%}
+body[data-theme="rose"]::before{background:linear-gradient(115deg,#2e1065,#db2777 25%,#f43f5e 50%,#a21caf 75%,#2e1065);background-size:500% 500%}
+@keyframes bgflow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+::selection{background:var(--gold);color:#0b101c}
+a{text-decoration:none;color:inherit}
+
+/* ---------- Navigation ---------- */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px 5%;transition:.3s;background:transparent}
+nav.scrolled{background:rgba(5,7,13,.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:13px 5%}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Sora',sans-serif;font-weight:800;font-size:18px;letter-spacing:.5px}
+.logo .mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#8a5c1a);display:grid;place-items:center;font-size:19px;font-weight:800;color:#0b101c}
+.logo em{font-style:normal;color:var(--gold)}
+.navlinks{display:flex;gap:26px;font-weight:600;font-size:14px}
+.navlinks a{position:relative;color:var(--muted);transition:.2s}
+.navlinks a:hover{color:#fff}
+.navlinks a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--gold);transition:.25s}
+.navlinks a:hover::after{width:100%}
+.cta{background:var(--gold);color:#0b101c;font-weight:800;padding:11px 20px;border-radius:10px;font-size:14px;transition:.25s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px #d4af3744}
+.burger{display:none;background:none;border:0;cursor:pointer;color:#fff;font-size:24px}
+@media(max-width:820px){
+  .navlinks,.navlinks+ .cta{display:none}
+  .burger{display:block}
+  .navlinks.open{display:flex;position:fixed;top:64px;left:0;right:0;background:rgba(5,7,13,.97);flex-direction:column;padding:24px 5%;gap:18px;border-bottom:1px solid var(--line)}
+}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:110px 5% 60px}
+#bg3d{position:absolute;inset:0;z-index:0;transition:opacity .4s;display:none}
+#bg3dCity{position:absolute;inset:0;z-index:0;transition:opacity .4s;display:block}
+body:not([data-theme="city"]) #bg3d{display:block}
+body:not([data-theme="city"]) #bg3dCity{display:none}
+.hero::before{content:'';position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at center,rgba(5,7,13,.35) 0%,rgba(5,7,13,.72) 100%)}
+.hero-inner{position:relative;z-index:2;max-width:920px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:rgba(11,16,28,.7);padding:8px 16px;border-radius:999px;font-size:12.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);margin-bottom:26px}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+.hero h1{font-family:'Sora',sans-serif;font-size:clamp(36px,5.8vw,68px);line-height:1.08;font-weight:800;margin-bottom:22px}
+.hero h1 .grad{background:linear-gradient(100deg,var(--gold),#f4d675 45%,var(--orange));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.hero p{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:700px;margin:0 auto 34px}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{border:0;cursor:pointer;font-family:inherit;font-weight:800;font-size:15px;padding:15px 28px;border-radius:12px;transition:.25s;display:inline-block}
+.btn.gold{background:linear-gradient(135deg,var(--gold),#c1922e);color:#0b101c;box-shadow:0 12px 40px #d4af3733}
+.btn.gold:hover{transform:translateY(-3px);box-shadow:0 16px 50px #d4af3755}
+.btn.ghost{background:rgba(11,16,28,.6);color:#fff;border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-3px)}
+.scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:var(--muted);font-size:12px;letter-spacing:2px;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-cue span{animation:cue 1.8s infinite}
+@keyframes cue{0%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(6px)}100%{opacity:.3;transform:translateY(0)}}
+
+/* ---------- Shared ---------- */
+.wrap{max-width:1180px;margin:0 auto;padding:0 5%}
+section{padding:96px 0;position:relative}
+.sect-head{text-align:center;max-width:760px;margin:0 auto 56px}
+.sect-head .tag{display:inline-block;color:var(--gold);font-size:12.5px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:12px}
+.sect-head h2{font-family:'Sora',sans-serif;font-size:clamp(28px,4vw,44px);font-weight:800;margin-bottom:14px}
+.sect-head p{color:var(--muted);font-size:16px}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--line) 20%,var(--line) 80%,transparent);max-width:1180px;margin:0 auto}
+
+/* ---------- Services ---------- */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service-card{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:30px;overflow:hidden;transition:.3s;will-change:transform;transform-style:preserve-3d}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--orange));transform:scaleX(0);transform-origin:left;transition:.35s}
+.service-card:hover{transform:translateY(-6px);border-color:#2a3a5e;box-shadow:0 20px 60px #0008}
+.service-card:hover::before{transform:scaleX(1)}
+.service-card .ico{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;font-size:25px;background:linear-gradient(135deg,rgba(212,175,55,.15),rgba(245,158,11,.12));border:1px solid var(--line);margin-bottom:20px}
+.service-card h3{font-size:19px;font-weight:800;margin-bottom:10px}
+.service-card p{color:var(--muted);font-size:14.5px}
+.service-card .num{position:absolute;top:20px;right:24px;font-family:'Sora',sans-serif;font-size:34px;font-weight:800;color:transparent;-webkit-text-stroke:1px rgba(212,175,55,.28)}
+@media(max-width:960px){.services-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.services-grid{grid-template-columns:1fr}}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.about-grid .tag{color:var(--gold);font-size:12.5px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:12px}
+.about-grid h2{font-family:'Sora',sans-serif;font-size:clamp(28px,3.6vw,42px);font-weight:800;margin-bottom:18px}
+.about-grid p{color:var(--muted);margin-bottom:16px;font-size:15.5px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0 30px}
+.checks div{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:600}
+.checks .tick{color:var(--green);font-weight:800}
+.about-visual{position:relative;height:420px;border-radius:20px;border:1px solid var(--line);background:var(--panel);overflow:hidden}
+#about3d{width:100%;height:100%}
+.about-visual .glow{position:absolute;inset:auto -30% -40% -30%;height:60%;background:radial-gradient(ellipse,var(--gold) 0%,transparent 65%);filter:blur(40px);opacity:.35;pointer-events:none}
+
+/* Company info table */
+.co-table{margin:26px 0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.co-row{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:14px 20px;border-top:1px solid var(--line);font-size:14px}
+.co-row:first-child{border-top:0}
+.co-row .k{color:var(--muted);font-weight:700}
+.co-row .v{font-weight:600;color:#fff}
+.co-row .v .pill{display:inline-block;background:rgba(52,211,153,.14);color:var(--green);border:1px solid rgba(52,211,153,.35);padding:2px 12px;border-radius:999px;font-size:12.5px;font-weight:800}
+
+.stat-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px;text-align:center;transition:.3s}
+.stat:hover{transform:translateY(-4px);border-color:#2a3a5e}
+.stat b{display:block;font-family:'Sora',sans-serif;font-size:30px;font-weight:800;color:var(--gold)}
+.stat span{color:var(--muted);font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+@media(max-width:960px){.about-grid{grid-template-columns:1fr}.about-visual{height:320px}.stat-strip{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.stat-strip{grid-template-columns:1fr 1fr}.checks{grid-template-columns:1fr}.co-row{grid-template-columns:1fr;gap:4px}}
+
+/* ---------- Partners ---------- */
+.partners{background:var(--panel);border-block:1px solid var(--line)}
+.partner-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.partner-card{background:var(--panel2);border:1px solid var(--line);border-radius:18px;padding:32px 26px;text-align:center;transition:.3s}
+.partner-card:hover{transform:translateY(-5px);border-color:#2a3a5e}
+.partner-card .avatar{width:64px;height:64px;margin:0 auto 16px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#8a5c1a);display:grid;place-items:center;font-family:'Sora',sans-serif;font-size:24px;font-weight:800;color:#0b101c}
+.partner-card h3{font-size:17px;font-weight:800;margin-bottom:4px}
+.partner-card p{color:var(--muted);font-size:13.5px}
+.partner-card .role{display:inline-block;margin-top:12px;font-size:11.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--orange);border:1px solid rgba(245,158,11,.4);padding:4px 12px;border-radius:999px}
+@media(max-width:760px){.partner-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.partner-grid{grid-template-columns:1fr}}
+
+/* ---------- Process ---------- */
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:step}
+.step{position:relative;padding-top:46px}
+.step::before{counter-increment:step;content:'0' counter(step);position:absolute;top:0;font-family:'Sora',sans-serif;font-size:26px;font-weight:800;color:transparent;-webkit-text-stroke:1px var(--gold)}
+.step .line{width:34px;height:2px;background:var(--gold);margin-bottom:16px}
+.step h3{font-size:17px;font-weight:800;margin-bottom:9px}
+.step p{color:var(--muted);font-size:14px}
+@media(max-width:960px){.process-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.process-grid{grid-template-columns:1fr}}
+
+/* ---------- Why us ---------- */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.why-item{display:flex;gap:16px;background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:22px;transition:.3s}
+.why-item:hover{border-color:#2a3a5e;transform:translateY(-3px)}
+.why-item .tick{width:42px;height:42px;flex:none;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),#8a5c1a);color:#0b101c;font-weight:800;font-size:18px}
+.why-item h4{font-size:16px;font-weight:800;margin-bottom:6px}
+.why-item p{color:var(--muted);font-size:13.8px}
+@media(max-width:860px){.why-grid{grid-template-columns:1fr}}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.contact-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:30px}
+.contact-card h3{font-family:'Sora',sans-serif;font-size:20px;font-weight:800;margin-bottom:6px}
+.contact-card>p{color:var(--muted);font-size:14px;margin-bottom:24px}
+.c-row{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--line)}
+.c-row .ico{width:40px;height:40px;flex:none;border-radius:11px;display:grid;place-items:center;background:rgba(212,175,55,.12);border:1px solid var(--line);font-size:17px}
+.c-row b{display:block;font-size:14px;margin-bottom:2px}
+.c-row a,.c-row span{color:var(--muted);font-size:14px;transition:.2s}
+.c-row a:hover{color:var(--cyan)}
+form{display:grid;gap:14px}
+.field label{display:block;font-size:12.5px;font-weight:700;letter-spacing:.5px;color:var(--muted);margin-bottom:7px;text-transform:uppercase}
+.field input,.field textarea,.field select{width:100%;padding:13px 15px;background:var(--bg);border:1px solid var(--line);border-radius:11px;color:#fff;font-family:inherit;font-size:14px;outline:none;transition:.25s}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 3px #d4af371a}
+.field textarea{resize:vertical;min-height:110px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-note{font-size:12px;color:var(--muted)}
+#formMsg{display:none;font-size:14px;font-weight:700;padding:13px;border-radius:10px}
+#formMsg.ok{display:block;background:rgba(52,211,153,.12);color:var(--green);border:1px solid rgba(52,211,153,.35)}
+#formMsg.err{display:block;background:rgba(248,113,113,.12);color:#f87171;border:1px solid rgba(248,113,113,.35)}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
+
+/* ---------- Map ---------- */
+.map-box{position:relative;margin-top:40px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel)}
+.map-box iframe{display:block;width:100%;height:400px;border:0;filter:grayscale(1) invert(1) contrast(.9) hue-rotate(180deg)}
+.map-box .map-tag{position:absolute;top:14px;left:14px;z-index:2;background:rgba(5,7,13,.85);border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:12.5px;font-weight:700;color:var(--gold);backdrop-filter:blur(6px)}
+@media(max-width:520px){.map-box iframe{height:300px}}
+
+/* ---------- Footer ---------- */
+footer{border-top:1px solid var(--line);padding:44px 0 30px;background:#030509}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+.foot p{color:var(--muted);font-size:13.5px}
+.foot-links{display:flex;gap:22px;font-size:14px}
+.foot-links a{color:var(--muted);transition:.2s}
+.foot-links a:hover{color:var(--gold)}
+body[data-raw] .hero-inner, body[data-raw] .scroll-cue{display:none!important}
+body[data-raw] .hero::before{display:none!important}
+@media(max-width:420px){.logo{font-size:15px}}
+
+/* ---------- Theme switcher ---------- */
+.theme-btn{position:fixed;bottom:24px;left:24px;z-index:90;width:54px;height:54px;border-radius:50%;border:1px solid var(--line);background:rgba(11,16,28,.85);backdrop-filter:blur(8px);color:var(--gold);font-size:22px;cursor:pointer;box-shadow:0 10px 30px #0008;transition:.25s;display:grid;place-items:center}
+.theme-btn:hover{transform:scale(1.1) rotate(15deg);border-color:var(--gold)}
+.theme-btn:active{transform:scale(.95)}
+.ver-chip{position:fixed;top:16px;right:16px;z-index:90;background:rgba(11,16,28,.8);border:1px solid var(--line);color:var(--gold);font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;letter-spacing:1px}
+</style>
+</head>
+<body data-theme="city">
+
+<nav id="nav">
+  <div class="logo"><span class="mark">P</span> Perennial <em>Infra</em> LLP</div>
+  <div class="navlinks" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">Company</a>
+    <a href="#partners">Partners</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a class="cta" href="#contact">Get a Quote</a>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="home">
+  <div id="bg3d"></div>
+  <div id="bg3dCity"></div>
+  <div class="hero-inner">
+    <div class="eyebrow"><span class="dot"></span> Warehousing &#8226; Transportation &#8226; Industrial Trading</div>
+    <h1>Moving India.<br><span class="grad">Storing &amp; Supplying What Builds It.</span></h1>
+    <p>Perennial Infra LLP is an active LLP based in Mathura, Uttar Pradesh, specialising in warehousing and support activities for transportation, and trading industrial commodities including bitumen oil, waste oils and related extracts.</p>
+    <div class="hero-btns">
+      <a class="btn gold" href="#contact">Request a Quote</a>
+      <a class="btn ghost" href="#services">Our Services</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>↓</span> Scroll</div>
+</header>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="sect-head">
+      <div class="tag">What we do</div>
+      <h2>Warehousing, Logistics &amp; Commodity Supply</h2>
+      <p>From secure storage to reliable supply of industrial materials, we keep your operations moving.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card"><div class="num">01</div><div class="ico">🏭</div><h3>Warehousing &amp; Storage</h3><p>Safe, well-managed storage facilities for goods and materials with structured inventory handling.</p></div>
+      <div class="service-card"><div class="num">02</div><div class="ico">🚛</div><h3>Transportation Support</h3><p>Support services that keep freight, loading, unloading and movement of goods running smoothly.</p></div>
+      <div class="service-card"><div class="num">03</div><div class="ico">🛢️</div><h3>Bitumen Oil Supply</h3><p>Regional supply of bitumen oil for road construction, waterproofing and industrial applications.</p></div>
+      <div class="service-card"><div class="num">04</div><div class="ico">⚗️</div><h3>Waste &amp; Industrial Oils</h3><p>Procurement and trading of waste oils and related industrial extracts with proper handling.</p></div>
+      <div class="service-card"><div class="num">05</div><div class="ico">🔗</div><h3>Supply Chain &amp; Distribution</h3><p>End-to-end sourcing, stock management and dependable distribution to regional buyers.</p></div>
+      <div class="service-card"><div class="num">06</div><div class="ico">📦</div><h3>Bulk Commodity Trading</h3><p>Trading of industrial commodities and materials in bulk for construction and manufacturing sectors.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <div class="tag">About the company</div>
+        <h2>Perennial Infra LLP</h2>
+        <p>Incorporated on <b>June 20, 2024</b> and registered under <b>RoC-Kanpur</b> (Uttar Pradesh), Perennial Infra LLP is an active Limited Liability Partnership focused on warehousing and support activities for transportation, alongside trading of industrial commodities.</p>
+        <p>As a regional supplier based in Mathura, we work across the infrastructure and energy supply chain — storing, moving and supplying the materials that build roads and power industry.</p>
+        <div class="co-table">
+          <div class="co-row"><div class="k">LLPIN</div><div class="v">ACH-8765</div></div>
+          <div class="co-row"><div class="k">Incorporation</div><div class="v">June 20, 2024</div></div>
+          <div class="co-row"><div class="k">Registered Office</div><div class="v">20-A, Manas Nagar, Shyam Nagar, Maholi Road, Mathura, Uttar Pradesh 281004</div></div>
+          <div class="co-row"><div class="k">Contribution</div><div class="v">INR 50,00,000</div></div>
+          <div class="co-row"><div class="k">Status</div><div class="v"><span class="pill">ACTIVE</span></div></div>
+        </div>
+        <div class="checks">
+          <div><span class="tick">✔</span> Active Registered LLP</div>
+          <div><span class="tick">✔</span> RoC-Kanpur Registered</div>
+          <div><span class="tick">✔</span> Trusted Regional Supplier</div>
+          <div><span class="tick">✔</span> Industrial Grade Materials</div>
+        </div>
+        <a class="btn gold" href="#contact">Discuss Your Requirement</a>
+      </div>
+      <div class="about-visual">
+        <div id="about3d"></div>
+        <div class="glow"></div>
+      </div>
+    </div>
+    <div class="stat-strip">
+      <div class="stat"><b>₹50 L</b><span>Capital Contribution</span></div>
+      <div class="stat"><b>2024</b><span>Incorporated</span></div>
+      <div class="stat"><b>ACTIVE</b><span>Compliance Status</span></div>
+      <div class="stat"><b>24/7</b><span>Supply Support</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================= PARTNERS ================= -->
+<section class="partners" id="partners">
+  <div class="wrap">
+    <div class="sect-head">
+      <div class="tag">Leadership</div>
+      <h2>Designated Partners</h2>
+      <p>The people steering Perennial Infra LLP with experience and commitment.</p>
+    </div>
+    <div class="partner-grid">
+      <div class="partner-card"><div class="avatar">MP</div><h3>Mahendra Pal Singh</h3><p>Designated Partner</p><span class="role">Partner</span></div>
+      <div class="partner-card"><div class="avatar">PS</div><h3>Preeti Singh</h3><p>Designated Partner</p><span class="role">Partner</span></div>
+      <div class="partner-card"><div class="avatar">SR</div><h3>Sharda Rani</h3><p>Designated Partner</p><span class="role">Partner</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section id="process">
+  <div class="wrap">
+    <div class="sect-head">
+      <div class="tag">How we work</div>
+      <h2>Simple, Reliable Engagement</h2>
+      <p>From first enquiry to final delivery, our process keeps things clear and on time.</p>
+    </div>
+    <div class="process-grid">
+      <div class="step"><div class="line"></div><h3>Enquiry</h3><p>Share your requirement for storage, transport, logistics or commodity supply.</p></div>
+      <div class="step"><div class="line"></div><h3>Quotation</h3><p>We assess the scope and provide a clear, competitive quote.</p></div>
+      <div class="step"><div class="line"></div><h3>Supply &amp; Delivery</h3><p>Materials are stored, handled and delivered as per schedule.</p></div>
+      <div class="step"><div class="line"></div><h3>Ongoing Support</h3><p>Reliable follow-up and continued supply for your operations.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================= WHY US ================= -->
+<section id="why">
+  <div class="wrap">
+    <div class="sect-head">
+      <div class="tag">Why choose us</div>
+      <h2>Built On Trust, Backed By Supply</h2>
+      <p>What makes businesses rely on Perennial Infra again and again.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><div class="tick">✓</div><div><h4>Reliable Supply</h4><p>Consistent availability of bitumen and industrial oils when you need them.</p></div></div>
+      <div class="why-item"><div class="tick">✓</div><div><h4>Compliant &amp; Registered</h4><p>An active, RoC-Kanpur registered LLP you can verify and trust.</p></div></div>
+      <div class="why-item"><div class="tick">✓</div><div><h4>Regional Advantage</h4><p>Strategically located in Mathura for fast delivery across the region.</p></div></div>
+      <div class="why-item"><div class="tick">✓</div><div><h4>End-to-End Handling</h4><p>From transport support to final delivery — one responsible partner.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sect-head">
+      <div class="tag">Get in touch</div>
+      <h2>Let's Discuss Your Requirement</h2>
+      <p>For quotations, supply enquiries or partnership — reach out and we'll respond quickly.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Contact Us</h3>
+        <p>Reach out through any channel below or send us a message.</p>
+        <div class="c-row"><div class="ico">📍</div><div><b>Office Address</b><span>Sector 19B, Sector 19, Pocket 1,<br>Dwarka, Delhi 110075, India</span></div></div>
+        <div class="c-row"><div class="ico">📞</div><div><b>Phone / WhatsApp</b><a href="tel:+917526030555">+91 75260 30555</a></div></div>
+        <div class="c-row"><div class="ico">✉️</div><div><b>Email</b><a href="mailto:alok@perennialinfra.com">alok@perennialinfra.com</a></div></div>
+        <div class="c-row"><div class="ico">🕘</div><div><b>Working Hours</b><span>Mon – Sat · 9:30 AM – 7:00 PM</span></div></div>
+      </div>
+      <div class="contact-card">
+        <h3>Send an Enquiry</h3>
+        <p>Tell us what you need — transport, logistics or material supply.</p>        <form id="contactForm">
+          <div class="form-row">
+            <div class="field"><label>Full Name *</label><input id="fName" required placeholder="Your name"></div>
+            <div class="field"><label>Phone *</label><input id="fPhone" required placeholder="Your phone number"></div>
+          </div>
+          <div class="field"><label>Email</label><input id="fEmail" type="email" placeholder="you@example.com"></div>
+          <div class="form-row">
+            <div class="field"><label>Service Needed</label>
+              <select id="fService">
+                <option>Warehousing &amp; Storage</option>
+                <option>Transportation Support</option>
+                <option>Bitumen Oil Supply</option>
+                <option>Waste / Industrial Oils</option>
+                <option>Bulk Commodity Trading</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field"><label>Preferred Contact</label>
+              <select id="fMode">
+                <option>Phone Call</option>
+                <option>WhatsApp</option>
+                <option>Email</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label>Message</label><textarea id="fMsg" placeholder="Briefly describe your requirement..."></textarea></div>
+          <div id="formMsg"></div>
+          <button type="submit" class="btn gold">Send Enquiry →</button>
+          <p class="form-note">By submitting, you agree to be contacted about your enquiry.</p>
+        </form>
+      </div>
+    </div>
+    <div class="map-box">
+      <span class="map-tag">📍 Dwarka, Delhi</span>
+      <iframe
+        src="https://www.google.com/maps?q=Sector%2019B%2C%20Sector%2019%2C%20Pocket%201%2C%20Dwarka%2C%20Delhi%20110075&output=embed"
+        title="Perennial Infra LLP - Dwarka, Delhi"
+        loading="lazy"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap foot">
+    <p>© <span id="year"></span> Perennial Infra LLP · LLPIN: ACH-8765 · RoC-Kanpur, Uttar Pradesh. All rights reserved.</p>
+    <div class="foot-links"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">Company</a><a href="#contact">Contact</a></div>
+  </div>
+</footer>
+
+<button class="theme-btn" id="themeBtn" title="Change background theme" aria-label="Change background theme">🎨</button>
+<div class="ver-chip" id="verChip">v7</div>
+
+<script src="js/three.min.js?v=2"></script>
+<script src="js/scene.js?v=2"></script>
+<script>if (location.search.indexOf('raw') > -1) document.body.dataset.raw = '1';</script>
+<script>
+// Navbar scroll state
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 30));
+
+// Mobile menu
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+// Year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Background theme switcher
+const themes = ['nebula', 'city', 'ocean', 'sunset', 'emerald', 'rose'];
+let themeIdx = 1; // default = city
+function applyTheme(name) {
+  document.body.dataset.theme = name;
+  if (window.__perennialThemeHooks) window.__perennialThemeHooks.forEach(fn => fn(name));
+}
+document.getElementById('themeBtn').addEventListener('click', () => {
+  themeIdx = (themeIdx + 1) % themes.length;
+  applyTheme(themes[themeIdx]);
+});
+
+// 3D tilt on service cards
+document.querySelectorAll('.service-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    card.style.transform = `perspective(900px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) translateY(-6px)`;
+  });
+  card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+});
+
+// Contact form (front-end demo — replace with real endpoint if needed)
+const form = document.getElementById('contactForm');
+const msg = document.getElementById('formMsg');
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const name = document.getElementById('fName').value.trim();
+  const phone = document.getElementById('fPhone').value.trim();
+  if (!name || !phone) {
+    msg.className = 'err'; msg.textContent = 'Please fill in your name and phone number.';
+    return;
+  }
+  msg.className = 'ok'; msg.textContent = 'Thank you, ' + name + '! Your enquiry has been received. We will contact you soon.';
+  form.reset();
+  setTimeout(() => { msg.className = ''; msg.textContent = ''; }, 6000);
+});
+</script>
+</body>
+</html>
